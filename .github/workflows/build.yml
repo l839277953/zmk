@@ -2,9 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Build ZMK
-        run: |
-          echo "Your build steps here..."
+    uses: l839277953/zmk/.github/workflows/build-user-config.yml@main
